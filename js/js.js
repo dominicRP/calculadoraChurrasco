@@ -1,4 +1,4 @@
-  /*var meatsTotal = 0;
+  var meatsTotal = 0;
   var persons = [0,0,0];
   
   $('.person').each(function(){
@@ -123,18 +123,7 @@
     window.print();
   });
   
-  */
 
-  function operacao(tipo){
-    var total = document.getElementsByClassName('total');
-    if(tipo=="menos"){
-      total -= 1;
-
-    }else if(tipo=="mais"){
-      total += 1;
-    }
-  }
-  
 
   function verificar( nome, quantidade ) {
 		saida = "Os checkboxes checados são:";

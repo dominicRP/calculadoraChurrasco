@@ -8,16 +8,20 @@
 
     <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
     <link rel= "stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity= "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin= "anonymous" >
+    <link rel="shortcut icon" href="img/grill.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-</head>
+
+
+  </head>
+
 <body>
   <!-- bg-ligth é o background e o navbar-ligth da o contraste-->
   <nav id="home" class="navbar navbar-expand-lg navbar-dark bg-dark">
         
     <div class="container">
       <!-- Se quiser colocar h1 e md-0 depois do brand pode -->
-      <a class="navbar-brand" href="#">
-         <img src="img/grill.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      <a class="navbar-brand" href="#home">
+         <img src="img/grill.png" width="35" height="35" class="d-inline-block align-top" alt="">
       </a>
         
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
@@ -28,107 +32,191 @@
         <ul class="navbar-nav mr-auto">
     
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#home"><b>Home</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#calculadora">Calculadora</a>
+            <a class="nav-link" href="#calculadora"><b>Calculadora</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#resultado">Resultado</a>
-          </li>
-    
-        </ul>
-        <ul class="navbar-nav ml-auto">
-                
-          <li class="nav-item dropdown">
-                  
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
-                  
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Facebook</a>
-              <a class="dropdown-item" href="#">Instagram</a>
-              <a class="dropdown-item" href="#">Twitter</a>
-            </div>
-    
-          </li>
-    
-        </ul>
-  
-      </div>
-          
+            <a class="nav-link" href="#resultado"><b>Resultado</b></a>
+          </li>  
+      </div>       
     </div>
   </nav>
 
-  <section class="header-site">
+  <section id="cabecalho" class="section-site">
     <div class="container">
+      <div class="row">
         <div class="col-xs-12">
-            <h1 class="titulo">Bem vindo à calculadora de churrasco<h1>
+            <h1 class="titulo">Calculadora de churrasco<h1>
 
           <div id="introducao">
               <p>Se você é a pessoa que sempre liga para o seu amigo perguntando quanto deve comprar de carne para o churrasco,
                   está calculadora foi planejada para você.<br>
                   Ela calcula de forma simples e prática a
-                  quantidade de comida para o seu churrasco baseado na quantidade de pessoas.<br><br>
+                  quantidade de comida para o seu churrasco baseado na quantidade de pessoas.
               </p>
           </div>
         </div>
+      </div>
     </div>
   </section>
 
-
-  <section id="calculadora" class="content-site">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div id="accordion">
-
-  <div class="card">
-    <div class="card-header">
-      <a class="card-link" data-toggle="collapse" href="#collapseOne">
-        Collapsible Group Item #1
-      </a>
-    </div>
-    <div id="collapseOne" class="collapse show" data-parent="#accordion">
-      <div class="card-body">
-        Lorem ipsum..
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-        Collapsible Group Item #2
-      </a>
-    </div>
-    <div id="collapseTwo" class="collapse" data-parent="#accordion">
-      <div class="card-body">
-        Lorem ipsum..
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-        Collapsible Group Item #3
-      </a>
-    </div>
-    <div id="collapseThree" class="collapse" data-parent="#accordion">
-      <div class="card-body">
-        Lorem ipsum..
-      </div>
-    </div>
-  </div>
-
-</div>
+  <section id="guests-section" class="page-section text-center bg-red">
+      <div class="container">
+        <div class="row">
+              <div class="col-lg-12 ">
+              <p class="guests-title">
+                Quantidade de Convidados
+              </p>
+          </div>
+          <div class="guest-counter">
+            <div class="col-md-4">
+              <div class="person man">
+                  <img src="img/homem1.png" width="150px">
+                <p>Homens</p>
+                <div class="counter">
+                  <a href="#" class="reduce">-</a><span data-value="0" class="total">0</span><a href="#" class="increase">+</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="person woman">
+                <img src="img/mulher.png" width="150px">
+                <p>Mulheres</p>
+                <div class="counter">
+                  <a href="#" class="reduce">-</a><span data-value="0" class="total">0</span><a href="#" class="increase">+</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="person child">
+                  <img src="img/baby.png" width="150px">
+                <p>Crianças</p>
+                <div class="counter">
+                  <a href="#" class="reduce">-</a><span data-value="0" class="total">0</span><a href="#" class="increase">+</a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
         </div>
-
       </div>
-    </div>
+    </section>
+
+
+  <section id="calculadora">
+    <div class="container demo">    
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            Carne
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> 
+                                  Level 2
+                                </label>
+                              </div>													
+                            </li>
+                            
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> 
+                                  Level 2
+                                </label>
+                              </div>													
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            Acompanhamento
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> 
+                                  Level 2
+                                </label>
+                              </div>													
+                            </li>
+                            
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> 
+                                  Level 2
+                                </label>
+                              </div>													
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            Bebida
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> 
+                                  Level 2
+                                </label>
+                              </div>													
+                            </li>
+                            
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> 
+                                  Level 2
+                                </label>
+                              </div>													
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- panel-group -->
+    </div><!-- container -->
   </section>
 
-  <section id="resultado" class="content-site">
+  <section id="resultado" class="section-site">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -139,8 +227,9 @@
     </div>
   </section>
 
-  
+  <script language="javascript" src="js/js.js"></script>
 
+    <script href="Semantic-UI-CSS-master/semantic.min.js" ></script>
     <script src= "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity= "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin= "anonymous" ></script> 
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity= "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin= "anonymous" ></script> 
     <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity= "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin= "anonymous" ></script>
